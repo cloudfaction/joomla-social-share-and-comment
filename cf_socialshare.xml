@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>SocialShareAndComment by Cloudfaction.nl</name>
+	<author>M.J.Blokdijk (Cloudfation.nl)</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C) 2014 M.J.Blokdijk. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>maarten@cloudfaction.nl</authorEmail>
+	<authorUrl>www.cloudfaction.nl</authorUrl>
+	<version>3</version>
+	<description>This plugin adds social share buttons (Facebook and Twitter) and Facebook comment function below each full article of a selected category. M.J.Blokdijk (cloudfaction.nl)</description>
+	<files>
+		<filename plugin="cf_socialshare">cf_socialshare.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_content_cf_socialshare.ini</language>
+		<language tag="en-GB">en-GB.plg_content_cf_socialshare.sys.ini</language>
+
+	</languages>
+	<config>
+		<fields name="params" >
+            <fieldset name="basic">
+           		 <field name="excludedcategories" multiple="true" extension="com_content" type="category" label="PLG_SOCIALSHARE_CHOOSE_CATEGORY_LBL" description="PLG_SOCIALSHARE_CHOOSE_CATEGORY_DSC" />                                                            	
+           		 
+           		  <field name="facebookcomments" type="radio"
+                                        default="0"
+                                        description="PLG_SOCIALSHARE_DESC"
+                                        label="PLG_SOCIALSHARE_DESC_LABEL"
+                                >
+                                        <option value="0">JOFF</option>
+                                        <option value="1">JON</option>
+                                </field>
+           		 
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
+
+
+
+
